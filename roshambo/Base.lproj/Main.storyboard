@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D130a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Roshambo View Controller-->
@@ -15,7 +16,80 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Play!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVV-pc-NEe">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tW1-t4-Tfb">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <state key="normal" image="paper">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGV-k9-LYJ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="rock">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0h-T2-ecf">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="scissors">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E0h-T2-ecf" firstAttribute="leading" secondItem="kGV-k9-LYJ" secondAttribute="trailing" constant="138" id="5O0-AZ-ZCd"/>
+                            <constraint firstAttribute="centerX" secondItem="tVV-pc-NEe" secondAttribute="centerX" id="6b4-YV-p8M"/>
+                            <constraint firstItem="tW1-t4-Tfb" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="110" id="ECc-CX-gB0"/>
+                            <constraint firstItem="kGV-k9-LYJ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="208" id="Ml0-HE-o8e"/>
+                            <constraint firstAttribute="centerY" secondItem="tVV-pc-NEe" secondAttribute="centerY" constant="-151.5" id="X1Q-rJ-aAM"/>
+                            <constraint firstItem="kGV-k9-LYJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="75" id="d3U-YM-fXI"/>
+                            <constraint firstItem="tW1-t4-Tfb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="166" id="o2S-hp-Fl2"/>
+                            <constraint firstItem="E0h-T2-ecf" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="208" id="w2v-7i-Rrd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="tVV-pc-NEe"/>
+                                <exclude reference="tW1-t4-Tfb"/>
+                                <exclude reference="kGV-k9-LYJ"/>
+                                <exclude reference="E0h-T2-ecf"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="ECc-CX-gB0"/>
+                                <exclude reference="o2S-hp-Fl2"/>
+                                <exclude reference="Ml0-HE-o8e"/>
+                                <exclude reference="d3U-YM-fXI"/>
+                                <exclude reference="5O0-AZ-ZCd"/>
+                                <exclude reference="w2v-7i-Rrd"/>
+                                <exclude reference="6b4-YV-p8M"/>
+                                <exclude reference="X1Q-rJ-aAM"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="tVV-pc-NEe"/>
+                                <include reference="tW1-t4-Tfb"/>
+                                <include reference="kGV-k9-LYJ"/>
+                                <include reference="E0h-T2-ecf"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ECc-CX-gB0"/>
+                                <include reference="o2S-hp-Fl2"/>
+                                <include reference="Ml0-HE-o8e"/>
+                                <include reference="d3U-YM-fXI"/>
+                                <include reference="5O0-AZ-ZCd"/>
+                                <include reference="w2v-7i-Rrd"/>
+                                <include reference="6b4-YV-p8M"/>
+                                <include reference="X1Q-rJ-aAM"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -40,4 +114,9 @@
             <point key="canvasLocation" x="1221" y="533"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="paper" width="37" height="32"/>
+        <image name="rock" width="37" height="32"/>
+        <image name="scissors" width="37" height="32"/>
+    </resources>
 </document>
