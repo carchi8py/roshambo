@@ -109,7 +109,40 @@
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iQv-cc-qHE">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vn7-St-nJd">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss" destination="Mkx-kU-1wo" eventType="touchUpInside" id="nwm-x3-bp2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Vn7-St-nJd" secondAttribute="centerY" constant="-203" id="cVG-66-2Ol"/>
+                            <constraint firstAttribute="centerX" secondItem="Vn7-St-nJd" secondAttribute="centerX" constant="-0.5" id="nDs-Lv-izj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Vn7-St-nJd"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="cVG-66-2Ol"/>
+                                <exclude reference="nDs-Lv-izj"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Vn7-St-nJd"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="cVG-66-2Ol"/>
+                                <include reference="nDs-Lv-izj"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9z0-Em-0IY" userLabel="First Responder" sceneMemberID="firstResponder"/>
