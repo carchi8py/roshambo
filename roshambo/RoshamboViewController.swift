@@ -32,7 +32,7 @@ class RoshamboViewController: UIViewController {
         controller = self.storyboard?.instantiateViewControllerWithIdentifier("FightViewControler") as
             FightViewControler
         
-        controller.yourHand = self.randomIntValue()
+        controller.yourHand = 2
         controller.theirHand = self.randomIntValue()
         
         self.presentViewController(controller, animated: true, completion: nil)
