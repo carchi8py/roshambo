@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		27E7DA8A1AD4D3B200BC4572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7DA891AD4D3B200BC4572 /* AppDelegate.swift */; };
-		27E7DA8C1AD4D3B200BC4572 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7DA8B1AD4D3B200BC4572 /* ViewController.swift */; };
+		27E7DA8C1AD4D3B200BC4572 /* RoshamboViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7DA8B1AD4D3B200BC4572 /* RoshamboViewController.swift */; };
 		27E7DA8F1AD4D3B200BC4572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E7DA8D1AD4D3B200BC4572 /* Main.storyboard */; };
 		27E7DA911AD4D3B200BC4572 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27E7DA901AD4D3B200BC4572 /* Images.xcassets */; };
 		27E7DA941AD4D3B200BC4572 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27E7DA921AD4D3B200BC4572 /* LaunchScreen.xib */; };
 		27E7DAA01AD4D3B200BC4572 /* roshamboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7DA9F1AD4D3B200BC4572 /* roshamboTests.swift */; };
+		27E7DAAC1AD4D6D300BC4572 /* FightViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7DAAB1AD4D6D300BC4572 /* FightViewControler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		27E7DA841AD4D3B200BC4572 /* roshambo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = roshambo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E7DA881AD4D3B200BC4572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27E7DA891AD4D3B200BC4572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		27E7DA8B1AD4D3B200BC4572 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27E7DA8B1AD4D3B200BC4572 /* RoshamboViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoshamboViewController.swift; sourceTree = "<group>"; };
 		27E7DA8E1AD4D3B200BC4572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27E7DA901AD4D3B200BC4572 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		27E7DA931AD4D3B200BC4572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		27E7DA991AD4D3B200BC4572 /* roshamboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = roshamboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E7DA9E1AD4D3B200BC4572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27E7DA9F1AD4D3B200BC4572 /* roshamboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roshamboTests.swift; sourceTree = "<group>"; };
+		27E7DAAB1AD4D6D300BC4572 /* FightViewControler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FightViewControler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				27E7DA891AD4D3B200BC4572 /* AppDelegate.swift */,
-				27E7DA8B1AD4D3B200BC4572 /* ViewController.swift */,
+				27E7DA8B1AD4D3B200BC4572 /* RoshamboViewController.swift */,
 				27E7DA8D1AD4D3B200BC4572 /* Main.storyboard */,
+				27E7DAAB1AD4D6D300BC4572 /* FightViewControler.swift */,
 				27E7DA901AD4D3B200BC4572 /* Images.xcassets */,
 				27E7DA921AD4D3B200BC4572 /* LaunchScreen.xib */,
 				27E7DA871AD4D3B200BC4572 /* Supporting Files */,
@@ -212,7 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27E7DA8C1AD4D3B200BC4572 /* ViewController.swift in Sources */,
+				27E7DA8C1AD4D3B200BC4572 /* RoshamboViewController.swift in Sources */,
+				27E7DAAC1AD4D6D300BC4572 /* FightViewControler.swift in Sources */,
 				27E7DA8A1AD4D3B200BC4572 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
