@@ -11,4 +11,7 @@ import UIKit
 
 class FightViewControler: UIViewController {
     
+    var yourHand: Int?
+    var theirHand: Int?
+    
 }

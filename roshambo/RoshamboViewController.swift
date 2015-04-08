@@ -19,6 +19,24 @@ class RoshamboViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func randomIntValue() -> Int {
+        let randomValue = 1 + arc4random() % 3
+        
+        return Int(randomValue)
+    }
+    
+    @IBAction func rock() {
+        var controller: FightViewControler
+        
+        controller = self.storyboard?.instantiateViewControllerWithIdentifier("FightViewControler") as
+            FightViewControler
+        
+        controller.yourHand = self.randomIntValue()
+        controller.theirHand = self.randomIntValue()
+        
+        self.presentViewController(controller, animated: true, completion: nil)
+    }
 
 
 }

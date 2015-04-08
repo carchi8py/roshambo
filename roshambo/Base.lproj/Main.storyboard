@@ -35,6 +35,9 @@
                                 <state key="normal" image="rock">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="rock" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2JZ-jW-efE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0h-T2-ecf">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -99,7 +102,7 @@
         <!--Fight View Controler-->
         <scene sceneID="qkU-LN-9B4">
             <objects>
-                <viewController id="Mkx-kU-1wo" customClass="FightViewControler" customModule="roshambo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FightViewControler" id="Mkx-kU-1wo" customClass="FightViewControler" customModule="roshambo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CAN-uv-oNU"/>
                         <viewControllerLayoutGuide type="bottom" id="Ero-vv-f4E"/>
