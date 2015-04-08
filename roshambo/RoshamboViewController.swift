@@ -37,7 +37,22 @@ class RoshamboViewController: UIViewController {
         
         self.presentViewController(controller, animated: true, completion: nil)
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let controller = segue.destinationViewController as FightViewControler
+        
+        if segue.identifier == "clickSissor" {
+            controller.yourHand = 1
+        } else {
+            controller.yourHand = 3
+        }
+        controller.theirHand = self.randomIntValue()
+    }
 
+    @IBAction func paper() {
+        performSegueWithIdentifier("clickPaper", sender: self)
+    
+    }
 
 }
 

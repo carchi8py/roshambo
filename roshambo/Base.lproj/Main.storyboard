@@ -29,6 +29,9 @@
                                 <state key="normal" image="paper">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="paper" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qQJ-G7-wHO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGV-k9-LYJ">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -44,6 +47,9 @@
                                 <state key="normal" image="scissors">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Mkx-kU-1wo" kind="presentation" identifier="clickSissor" id="y9H-bS-u2S"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -94,6 +100,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <segue destination="Mkx-kU-1wo" kind="presentation" identifier="clickPaper" id="pAe-Bg-kRt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,4 +182,7 @@
         <image name="rock" width="37" height="32"/>
         <image name="scissors" width="37" height="32"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="y9H-bS-u2S"/>
+    </inferredMetricsTieBreakers>
 </document>
